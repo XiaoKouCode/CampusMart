@@ -22,6 +22,7 @@
 /Users/kangjing/Desktop/基于Spring Boot的校园二手交易平台/code/src/main/java/com/campus/trade/dto/auth/AuthResponse.java
 /Users/kangjing/Desktop/基于Spring Boot的校园二手交易平台/code/src/main/java/com/campus/trade/dto/auth/LoginRequest.java
 /Users/kangjing/Desktop/基于Spring Boot的校园二手交易平台/code/src/main/java/com/campus/trade/dto/auth/RegisterRequest.java
+/Users/kangjing/Desktop/基于Spring Boot的校园二手交易平台/code/src/main/java/com/campus/trade/dto/auth/ResetPasswordRequest.java
 /Users/kangjing/Desktop/基于Spring Boot的校园二手交易平台/code/src/main/java/com/campus/trade/dto/chat/ChatMessageRequest.java
 /Users/kangjing/Desktop/基于Spring Boot的校园二手交易平台/code/src/main/java/com/campus/trade/dto/chat/ChatMessageResponse.java
 /Users/kangjing/Desktop/基于Spring Boot的校园二手交易平台/code/src/main/java/com/campus/trade/dto/item/CreateItemRequest.java
