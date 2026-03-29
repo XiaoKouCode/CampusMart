@@ -93,6 +93,11 @@ export default function Auth() {
                   type="password"
                 />
               </Field>
+              <div className="flex items-center justify-between">
+                <Link to="/reset-password" className="text-sm text-zinc-500 hover:text-zinc-700">
+                  忘记密码？
+                </Link>
+              </div>
               <Button type="submit" className="w-full" disabled={busy}>
                 {busy ? '处理中…' : '登录'}
               </Button>
