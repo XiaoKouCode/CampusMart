@@ -1,0 +1,52 @@
+spring:
+  application:
+    name: secondhand-trade
+  datasource:
+    url: jdbc:h2:mem:trade;MODE=MYSQL;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      timeout: 1000ms
+  cache:
+    type: simple
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 5MB
+      max-request-size: 20MB
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+
+security:
+  jwt:
+    secret: "campus-secondhand-platform-jwt-secret-key-change-in-production-12345"
+    expiration-minutes: 180
+
+app:
+  rate-limit:
+    login-per-minute: 30
+    order-per-minute: 50
+  upload:
+    dir: uploads
+    max-size: 5MB
